@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "npx tsx --test tests/",
+    "test": "node --import tsx --test tests/*.test.ts",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
