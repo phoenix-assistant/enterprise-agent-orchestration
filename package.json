@@ -1,0 +1,38 @@
+{
+  "name": "@phoenix-assistant/enterprise-agent-orchestration",
+  "version": "0.1.0",
+  "description": "Kubernetes-style orchestration for AI agents with scheduling, scaling, and health checks",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "enterprise-agent-orchestration": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test tests/",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "agents",
+    "orchestration",
+    "kubernetes",
+    "enterprise",
+    "scheduling"
+  ],
+  "author": "Phoenix Assistant",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phoenix-assistant/enterprise-agent-orchestration.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^22.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
